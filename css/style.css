@@ -1,0 +1,298 @@
+/*Embeded font-family*/
+@font-face{
+    font-family: 'ArchnaFont';
+    src: url('fonts/swansea-font/Swansea-q3pd.ttf');
+}
+
+body {
+    font-family: 'ArchnaFont';
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 0;
+    color: #2F4F4F;
+    background-color: #f7f7f7;
+    font-size: 20px;
+}
+
+header {
+    background: #154360;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header span{
+    font-weight: bold;
+}
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 10px 3px;
+    border-radius: 10px;
+}
+
+nav ul li a {
+    color: #154360;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+}
+nav ul li:hover{
+    color: #154360;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin: 10px auto;
+    text-align: center;
+    width: 80%;
+}
+
+p{
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color: #008080;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #154360;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p{
+    text-align: center;
+}
+
+h2{
+    color: #1a5276;
+}
+/* Home */
+.personaldetail{
+    display: flex;
+    margin: 20px auto;
+}
+
+.personaldetail .personaldetail_image{
+    max-width: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    margin: 20px;
+}
+
+.personaldetail img{
+    max-width: 40%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    margin: 20px;
+}
+
+.personaldetail img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px #154360;
+}
+
+/*About Me*/
+.about-detail-container{
+    display: flex;
+    margin: 20px;
+}
+.about-detail{
+    width: 45%;
+    text-align: justify;
+    margin: 0 auto;
+}
+.about-detail img{
+    width: 250px;
+}
+
+/* Portfolio Detail */
+.portfolio-container{
+    display: flex;
+    margin: 10px;
+}
+
+.portfolio-menu{
+    margin: 10px;
+}
+
+.portfolio-menu li{
+    text-align: left;
+    display: block;
+    padding: 5px;
+    margin: 10px 15px;
+    box-shadow: #154360 7px 6px 15px -1px;
+    border-radius: 10px;
+}
+
+.portfolio-menu li:hover{
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.portfolio-detail{
+    width: 70%;
+}
+
+.portfolio-detail img{
+    width: 500px;
+}
+
+.portfolio-detail li, .portfolio-detail h3{
+    text-align: left;
+}
+.cv_detail{
+    display: flex;
+    width: 100%;
+}
+.cv_detail img{
+    max-width: 30%;
+    margin-right: 25%;
+    width: 100%;
+}
+.cv_detail p{
+    max-width: 60%;
+    width: 100%;
+}
+.certificate_detail{
+    display: flex;
+    width: 100%;
+}
+
+.certificate_detail img{
+    width: 200px;
+    height: 150px;
+}
+
+.certificate_detail p{
+    margin: 10px;
+    width: 70%;
+    font-weight: bold;
+}
+
+.certificate_detail .rightalign{
+    text-align: right;
+}
+/* Contact Form*/
+#contactForm{
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid #aaaacc;
+    padding: 10px;
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: left;
+}
+
+
+#contactForm input, #contactForm textarea {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contactForm .btnsend
+{
+    background: #154360;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Blog */
+.blog{
+    display: flex;
+    margin: 20px;
+}
+
+.blog-detail{
+    width: 33%;
+    margin: 10px;
+}
+
+.blog-detail img{
+    width: 300px;
+    height: 250px;
+    transition: transform 3s, border-radius 3s;
+}
+
+.blog-detail img:hover{
+    transform: rotate(20deg);
+    border-radius: 50px;
+}
+
+.blog-detail h3{
+    margin: 0px;
+    color: #0b5345;
+}
+
+.blog-detail p{
+    text-align: center;
+}
+
+.blog-detail a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Single blog detail */
+.single-blog-detail{
+    width: 50%;
+    margin: 0 auto;
+}
+.single-blog-detail ol li{
+    text-align: left;
+}
+/* Testimoniol Detail */
+.testimonial-detail{
+    background: #154360;
+    width: 90%;
+    text-align: justify;
+    margin: 10px auto;
+    padding: 10px;
+    color: #f0fff0;
+    border-radius: 15px;
+}
+
+.testimonial-detail h3, .testimonial-detail p{
+    padding-left:20px;
+    margin: 0;
+}
+
+.testimonial-detail h3{
+    color: #fafad2;
+}
